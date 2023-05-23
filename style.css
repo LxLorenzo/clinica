@@ -1,5 +1,5 @@
 * {
-  border-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -25,8 +25,6 @@ p, li {
 /* Barra de navegação */
 header, .navbar {
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
 }
 
 #nav-container {
@@ -40,10 +38,6 @@ header, .navbar {
 
 .navbar-brand {
   color: #000;
-}
-
-.navbar-brand:hover {
-  color: #FFF;
 }
 
 #navbar-links a {
@@ -65,12 +59,9 @@ header, .navbar {
   padding: 0;
 }
 
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
-  height: 90vh;
-}
 
 #mainSlider .carousel-caption {
-  top: 30%;
+  top: 60%;
 }
 
 #mainSlider .carousel-caption h2 {
@@ -81,7 +72,6 @@ header, .navbar {
 #mainSlider .carousel-caption p {
   font-size: 22px;
   font-weight: 300;
-  margin-bottom: 100px;
   color: #FFF;
 }
 
@@ -101,6 +91,11 @@ header, .navbar {
   background-color: #9ce6ad;
 }
 
+.carousel-indicators li {
+  background-color: #fff;
+  opacity: .8;
+}
+
 .carousel-indicators .active {
   background-color: #befacc;
 }
@@ -109,6 +104,8 @@ header, .navbar {
 
 #about-area {
   background-color: #F9F9F9;
+
+  margin-top: 200px;
 }
 
 .main-title {
