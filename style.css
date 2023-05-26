@@ -21,11 +21,10 @@
   width: fit-content;
   position: fixed;
   top: 90%;
-  left: 1%;
+  right: 1%;
   font-size: 80px;
+  z-index: 1001;
 }
-
-
 
 .header-container {
   width: 100%;
@@ -33,12 +32,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3.5rem;
   border-bottom: 1px solid black;
+  padding: 1rem 5rem;
+}
+
+.header-container-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-logo {
-  width: 75px;
+  width: 100%;
 }
 
 .nav-items {
@@ -168,7 +174,7 @@
 .main-title {
   color: #444;
   margin: 0 0 65px 0;
-  font-size: 40px;
+  font-size: 3.5rem;
   text-align: center;
   font-weight: 600;
 }
@@ -191,7 +197,7 @@
 }
 
 .about-title {
-  font-size: 17px;
+  font-size: 1.1rem;
   color: #444;
   text-transform: uppercase;
   font-weight: bold;
@@ -354,12 +360,7 @@
     border: none;
     position: block;
   }
-  .header-container-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
+  
   .nav-items {
     display: none;
   }
@@ -459,8 +460,11 @@
 }
 
 @media screen and (max-width: 425px) {
+  .header-container {
+    padding: 1rem 2rem;
+  }
   .carousel-img {
-    height: 70vh;
+    height: 65vh;
   }
   #mainSlider .carousel-caption {
     top: 55%;
@@ -480,6 +484,15 @@
 }
 
 @media screen and (max-width: 325px) {
+  .header-container {
+    padding: 1rem 2rem;
+  }
+  .carousel-img {
+    height: 50vh;
+  }
+  .nav-logo {
+    font-size: 32px;
+  }
   .carousel-caption h2{
     font-size: 40px !important;
   }
