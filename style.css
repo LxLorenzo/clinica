@@ -185,6 +185,16 @@
   font-size: 40px;
   text-align: center;
   font-weight: 600;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  border-top: 2px solid #333;
+  width: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
 }
 
 .main-title::after {
@@ -192,7 +202,7 @@
   border-top: 2px solid #333;
   width: 15%;
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: 42.5%;
 }
 
@@ -352,6 +362,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .carousel {
+    width: 100%;
+  }
   .header-container.active {
     justify-content: space-around;
     flex-direction: column;
@@ -470,16 +483,16 @@
     top: 55%;
   }
   .main-title {
-    font-size: 26px;
+    font-size: 2rem;
   }
   .service-box h4 {
-    font-size: 16px;
+    font-size: 1rem;
   }
   #call-area .container {
     padding: 40px 0px;
   }
   .unidades-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -504,6 +517,7 @@
   }
   #services-area {
     margin: 4rem 0 6rem 0;
+    padding: 3rem 0;
   }
   .container {
     padding: 40px 0px;
