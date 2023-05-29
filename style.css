@@ -320,22 +320,6 @@
   color: #fff;
 }
 
-/* Footer */
-
-#contact-area {
-  text-align: center;
-  margin: 3rem;
-}
-
-#msg-box p {
-  font-size: 22px;
-}
-
-#contact-form input[type="text"], #contact-form textarea {
-  margin-bottom: 15px;
-  border-radius: 0;
-}
-
 /* Copy */
 
 #copy-area {
@@ -420,7 +404,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  #about-area, #contact-area {
+  #about-area {
     margin: 5rem auto;
   }
   #about-area img {
