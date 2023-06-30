@@ -19,8 +19,8 @@
 .whatsapp-icon {
   width: fit-content;
   position: fixed;
-  top: 90%;
-  right: 1%;
+  top: 90vh;
+  right: 4px;
   font-size: 80px;
   z-index: 1001;
 }
