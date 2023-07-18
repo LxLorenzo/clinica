@@ -264,32 +264,18 @@
 }
 
 .service-box {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box img {
+  width: 18rem;
 }
 
 .box-margin {
   margin-bottom: 50px;
 }
-
-.service-box i, .service-box h4 {
-  transition: .4s;
-}
-
-.service-box i {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #444;
-}
-
-.service-box h4 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.service-box:hover > i, .service-box:hover > h4 {
-  color: #a6dbb2;
-}
-
 
 #call-area {
   background-color: #a6dbb2;
@@ -361,7 +347,7 @@
   color: #a6dbb2;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .carousel {
     width: 100%;
   }
@@ -373,7 +359,6 @@
     border: none;
     position: block;
   }
-  
   .nav-items {
     display: none;
   }
@@ -416,6 +401,9 @@
   }
   .about-area-container {
     padding: 0;
+  }
+  .nav-items .btn-contato {
+    margin: 0;
   }
 }
 
